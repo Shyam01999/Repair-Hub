@@ -1,0 +1,170 @@
+.navbarWrapper {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 1.5rem;
+	margin: auto;
+}
+
+.logo {
+	font-size: 2rem;
+}
+
+.navLargeScreen {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.navItem {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+	transition: color 0.2s ease-in-out;
+}
+
+.navItem:hover {
+	color: blue;
+}
+
+.navItem button {
+	background: none;
+	border: none;
+	padding: 0.3rem;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.navItem button:hover {
+	background-color: #ffd700;
+	color: #ff0040ff;
+	border-radius: 10%;
+}
+
+.authButtons {
+	display: flex;
+	gap: 1rem;
+}
+
+.authButtons a {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	text-decoration: none;
+	border: 1px solid #0070f3;
+	padding: 0.4rem 0.75rem;
+	border-radius: 4px;
+	color: #0070f3;
+	font-weight: 500;
+	transition: all 0.2s ease-in-out;
+}
+
+
+
+.authButtons a:last-child {
+	color: #0070f3;
+	border: 1px solid #0070f3;
+}
+
+.authButtons a:last-child:hover {
+	background-color: #0070f3;
+	color: white;
+}
+
+.hamburger {
+	display: none;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	height: 100vh;
+	width: 250px;
+	background-color: white;
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	transition: right 0.3s ease-in-out;
+	box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.sidebar.open {
+	right: 0;
+}
+
+.closeBtn {
+	align-self: flex-start;
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.closeBtn:hover {
+	color: #f30000ff;
+}
+
+.sidebarSeparator{
+  width: 100%;
+  background-color: gray;
+  height: 1px;
+}
+
+.sidebarItem {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebarItem:hover {
+  color: #0070f3;
+}
+
+
+.sidebar .sidebarItem:nth-child(5):hover {
+  color: #f30000ff;
+	background-color: #ffd700;
+}
+
+@media (max-width: 768px) {
+	.navLargeScreen,
+	.authButtons {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+    transition: color 0.2s ease-in-out;
+	}
+	.hamburger:hover {
+		color: #0070f3;
+	}
+}
