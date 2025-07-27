@@ -1,6 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-#Client files
+#CLIENT FILES
+# dependencies
 client/node_modules
 /.pnp
 .pnp.*
@@ -42,5 +43,11 @@ client/*.tsbuildinfo
 client/next-env.d.ts
 
 #Server files
+
+
+
+
+
+#SERVER FILES
 server/node_modules
 server/.env
