@@ -32,7 +32,7 @@ app.get("/", (req: Request, res : Response) => {
 interface User {
     title : string,
 
-}
+} 
 
 app.post("/user", (req: Request, res: Response) => {
 

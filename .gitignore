@@ -46,21 +46,6 @@ client/next-env.d.ts
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #SERVER FILES
 server/node_modules
 server/.env
