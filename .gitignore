@@ -42,7 +42,20 @@ yarn-error.log*
 client/*.tsbuildinfo
 client/next-env.d.ts
 
-#Server files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
