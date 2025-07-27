@@ -17,10 +17,10 @@
 
 
 ## Tech Stack :-
-=> Frontend = HTML5, CSS3, JavaScript, Next.JS, TypeScript
-=> Backend = Express.JS
-=> Database = PostgreSQL
-=> Storage = Cloudinary  
+=> Frontend = HTML5, CSS3, JavaScript, Next.JS, TypeScript   
+=> Backend = Express.JS   
+=> Database = PostgreSQL   
+=> Storage = Cloudinary   
 => Hosting Database = Supabase  
 => Version Control = Github  
 => Deployment = Render  
