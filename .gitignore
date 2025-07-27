@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 #Client files
-# dependencies
 client/node_modules
 /.pnp
 .pnp.*
@@ -42,6 +41,6 @@ yarn-error.log*
 client/*.tsbuildinfo
 client/next-env.d.ts
 
-#server files
+#Server files
 server/node_modules
 server/.env

@@ -18,7 +18,7 @@
 
 ## Tech Stack :-
 => Frontend = HTML5, CSS3, JavaScript, Next.JS, TypeScript   
-=> Backend = Express.JS   
+=> Backend = Node js, Express.JS, TypeScript  
 => Database = PostgreSQL   
 => Storage = Cloudinary   
 => Hosting Database = Supabase  
