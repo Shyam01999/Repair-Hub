@@ -11,8 +11,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem 1.5rem;
-	margin: auto;
+	padding: 0.2rem 1.5rem;
 }
 
 .logo {
@@ -29,13 +28,16 @@
 	align-items: center;
 	gap: 0.5rem;
 	text-decoration: none;
-	color: #333;
 	font-weight: 500;
 	transition: color 0.2s ease-in-out;
 }
 
 .navItem:hover {
 	color: blue;
+}
+
+.navItem svg {
+	color: inherit;
 }
 
 .navItem button {
@@ -58,6 +60,7 @@
 	border-radius: 10%;
 }
 
+
 .authButtons {
 	display: flex;
 	gap: 1rem;
@@ -79,7 +82,6 @@
 
 
 .authButtons a:last-child {
-	color: #0070f3;
 	border: 1px solid #0070f3;
 }
 
@@ -114,7 +116,13 @@
 	right: 0;
 }
 
-.closeBtn {
+.sidebarButtons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sidebarButtons .themeToggler{
 	align-self: flex-start;
 	background: none;
 	border: none;
@@ -124,7 +132,21 @@
   transition: color 0.2s ease-in-out;
 }
 
-.closeBtn:hover {
+.sidebarButtons .themeToggler:hover {
+	color: #ff0080ff;
+}
+
+.sidebarButtons .closeBtn {
+	align-self: flex-start;
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.sidebarButtons .closeBtn:hover {
 	color: #f30000ff;
 }
 
@@ -148,11 +170,30 @@
   color: #0070f3;
 }
 
-
+.sidebar .sidebarItem:nth-child(5) {
+	padding: 0.6rem 0 0.8rem 0.1rem;
+	border-radius: 0.5rem;
+}
 .sidebar .sidebarItem:nth-child(5):hover {
   color: #f30000ff;
 	background-color: #ffd700;
 }
+
+.sidebar .sidebarAuthButtons {
+	transition: all 0.2s ease-in-out;
+	margin-top: auto;
+}
+
+.sidebar .sidebarAuthButtons:hover {
+	color: #f30000ff;
+}
+
+.sidebar .sidebarAuthButtons a{
+	display: flex;
+	align-items: center;
+	gap: 0.7rem;
+}
+
 
 @media (max-width: 768px) {
 	.navLargeScreen,

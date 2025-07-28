@@ -1,0 +1,127 @@
+.left-loginform-layout {
+	display: flex;
+	height: 100vh;
+}
+
+.login-form-section {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+
+button.mobile_number_signin_button,
+button.email_signin_button {
+	/* next.JS does not allow using id inline in documents */
+	background-color: #2a4461ff;
+}
+
+button.mobile_number_signin_button:hover,
+button.email_signin_button:hover {
+	/* next.JS does not allow using id inline in documents */
+	background-color: #0265d7ff;
+}
+
+.submitButton {
+	background-color: #1082c0ff;
+}
+
+.submitButton:hover {
+	background-color: #075c89ff;
+}
+
+.signuptext {
+	color: #f30000ff;
+}
+
+.signuptext:hover {
+	color: #bf0000ff;
+}
+.social-signin-wrapper {
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.divider {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 2rem 0;
+	color: gray;
+	font-weight: 500;
+	font-size: 0.875rem;
+}
+
+.divider::before,
+.divider::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	width: 10rem;
+	background: linear-gradient(to right, transparent, #ccc);
+}
+
+.divider::after {
+	background: linear-gradient(to left, transparent, #ccc);
+}
+
+.divider-text {
+	padding: 0 1rem;
+	background-color: #ffffff;
+	position: relative;
+	z-index: 1;
+	cursor: default;
+	user-select: none;
+}
+
+.social-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-top: 1rem;
+}
+
+button.social-button-google {
+	border-radius: 50% !important;
+	background-color: #db4437;
+	color: #ffffff;
+	transition: all 0.2s ease-in-out;
+}
+
+
+button.social-button-google:hover {
+	background-color: #e45649ff;
+	transform: translateY(-2px);
+}
+
+
+button.social-button-facebook {
+	border-radius: 50% !important;
+	background-color: #4267b2;
+	color: #ffffff;
+	transition: all 0.2s ease-in-out;
+}
+
+button.social-button-facebook:hover {
+	background-color: #5177c3ff;
+	transform: translateY(-2px);
+}
+
+
+.social-button:hover {
+	opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+	.left-loginform-layout {
+		flex-direction: column;
+	}
+
+	.login-form-section {
+		height: 100vh;
+	}
+}

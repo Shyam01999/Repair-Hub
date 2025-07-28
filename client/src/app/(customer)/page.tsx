@@ -1,9 +1,10 @@
+import { JSX } from "react";
 import { CustomerHeader } from "../components/customer/CustomerHeader";
-import "../css/globals.css";
+import "@css/globals.css";
 
 
 
-export default function Home() {
+export default function Home():JSX.Element {
   return (
     <>
       <header>

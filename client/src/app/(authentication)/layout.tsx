@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { JSX } from "react";
 
 const poppins = Poppins({
   style: ['normal', 'italic'],
@@ -7,10 +8,10 @@ const poppins = Poppins({
   fallback: ['sans-serif']
 })
 
-export default function ClientLayout({ children }: { children: React.ReactNode }) {
-	return (
+export default function AuthenticationLayout({ children }: { children: React.ReactNode }):JSX.Element {
+  return (
 		<html>
-			<body className={poppins.className} style={{ margin: 0, padding: 0 }}>
+      <body className={poppins.className} style={{ 'margin': 0, 'padding': 0}}>
 				{children}
 			</body>
 		</html>

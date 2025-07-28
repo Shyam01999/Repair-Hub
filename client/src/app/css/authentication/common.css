@@ -1,0 +1,152 @@
+.input {
+	box-sizing: border-box;
+}
+
+.form-container {
+	width: 100%;
+	max-width: 420px;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	background: #ffffff;
+	padding: 40px;
+	border-radius: 16px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-container > div,
+.form-container .password-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 18px;
+}
+
+.form-container h2 {
+	font-size: 28px;
+	margin-bottom: 25px;
+	font-weight: 700;
+	text-align: center;
+	color: #222;
+	cursor: default;
+}
+
+.form-container h2 a {
+	text-decoration: none;
+	color: #30cf00ff;
+	transition: all 0.2s ease-in-out;
+}
+
+.form-container h2 a:hover {
+	color: #249c00ff;
+}
+
+.form-container input {
+	padding: 14px 16px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	font-size: 15px;
+	transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+	border-color: #f30000ff;
+	outline: none;
+}
+
+.form-container button {
+	width: 100%;
+	padding: 14px;
+	font-size: 16px;
+	font-weight: 600;
+	border: none;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.25s ease;
+}
+
+
+.form-container .mobile_number_errors,
+.form-container .email_errors,
+.form-container .password_errors {
+	color: #f30000ff;
+	margin-left: 0.5rem;
+	padding-top: 0.1rem;
+	font-weight: 500;
+}
+
+ .hide { 
+  display: none;
+}
+
+.form-container .bottom-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+  cursor: default;
+	user-select: none;
+}
+
+.form-container .bottom-section a {
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+
+.password-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.password-field {
+	position: relative;
+	width: 100%;
+}
+
+.password-field input {
+	width: 100%;
+	padding-right: 45px;
+}
+
+.password-toggle {
+	position: absolute;
+	top: 58%;
+	right: 14px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 18px;
+	color: #777;
+	user-select: none;
+	transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.fade-icon {
+	display: inline-block;
+	transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+	opacity: 1;
+}
+
+.image-section {
+	flex: 1;
+	background-image: url("https://discoverywall.nz/media_cache/17891/17891_highlight.jpg");
+	background-size: cover;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.image-section {
+		display: none;
+	}
+
+	.form-container {
+		box-shadow: none;
+		border-radius: 12px;
+	}
+
+  .form-container .bottom-section {
+    flex-direction: column;
+  }
+}

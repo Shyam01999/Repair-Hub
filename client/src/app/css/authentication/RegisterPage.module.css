@@ -1,0 +1,42 @@
+.left-registerform-layout {
+	display: flex;
+	height: 100vh;
+}
+
+.register-form-section {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+
+.submitButton {
+	background-color: #bf0000ff;
+}
+
+
+.submitButton:hover {
+	background-color: #f30000ff;
+}
+
+.signintext {
+	color: #0070f3;
+}
+
+.signintext:hover {
+	color: #003470ff;
+}
+
+
+@media screen and (max-width: 768px) {
+	.left-registerform-layout {
+		flex-direction: column;
+	}
+
+	.register-form-section {
+		height: 100vh;
+	}
+}
+
+

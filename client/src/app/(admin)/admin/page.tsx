@@ -1,4 +1,6 @@
-export default function Admin() {
+import { JSX } from 'react';
+
+export default function Admin():JSX.Element {
   return (
     <div>
       <main>
