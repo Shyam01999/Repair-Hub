@@ -83,6 +83,9 @@ export default function Login(): JSX.Element {
 							<button type="submit" className={styles.submitButton}>
 								Sign In
 							</button>
+							<Link href="/" className={styles["forgot-password-text"]}>
+								Forgot password?
+							</Link>
 							<div className={styles["social-signin-wrapper"]}>
 								<div className={styles["divider"]}>
 									<span className={styles["divider-text"]}>or sign in with</span>
