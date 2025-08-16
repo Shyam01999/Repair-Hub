@@ -99,14 +99,12 @@ button.email_signin_button:hover {
 
 button.social-button-google {
 	border-radius: 50% !important;
-	background-color: #db4437;
 	color: #ffffff;
 	transition: all 0.2s ease-in-out;
 }
 
 
 button.social-button-google:hover {
-	background-color: #e45649ff;
 	transform: translateY(-2px);
 }
 

@@ -5,6 +5,7 @@ import "@css/authentication/common.css";
 import styles from "@css/authentication/LoginPage.module.css";
 import { FaEye, FaEyeSlash, FaGoogle, FaFacebookF } from "react-icons/fa";
 import Link from "next/link";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Login(): JSX.Element {
 	const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -39,19 +40,12 @@ export default function Login(): JSX.Element {
 										<input type="text" placeholder="Enter Mobile Number" required autoComplete="off" className="input" />
 										<span className="mobile_number_errors hide">Invalid Mobile Number !</span>
 									</div>
-									<div className="password-wrapper">
 										<div className="password-field">
 											<input type={showPassword ? "text" : "password"} placeholder="Enter Password" required className="input" />
 											<span className="password-toggle" onClick={() => setShowPassword((prev) => !prev)} role="button" tabIndex={0}>
 												<span className="fade-icon">{showPassword ? <FaEyeSlash /> : <FaEye />}</span>
 											</span>
 										</div>
-
-										<div className="password-field">
-											<input type={showPassword ? "text" : "password"} placeholder="Confirm Password" required className="input" />
-											<span className="password_errors hide">Passwords do not match !</span>
-										</div>
-									</div>
 								</>
 							)}
 							{emailSignInButtonVisible ? (
@@ -64,19 +58,12 @@ export default function Login(): JSX.Element {
 										<input type="email" placeholder="Enter Email Address" required autoComplete="off" className="input" />
 										<span className="email_errors hide">Invalid Email !</span>
 									</div>
-									<div className="password-wrapper">
 										<div className="password-field">
 											<input type={showPassword ? "text" : "password"} placeholder="Enter Password" required className="input" />
 											<span className="password-toggle" onClick={() => setShowPassword((prev) => !prev)} role="button" tabIndex={0}>
 												<span className="fade-icon">{showPassword ? <FaEyeSlash /> : <FaEye />}</span>
 											</span>
 										</div>
-
-										<div className="password-field">
-											<input type={showPassword ? "text" : "password"} placeholder="Confirm Password" required className="input" />
-											<span className="password_errors hide">Passwords do not match !</span>
-										</div>
-									</div>
 								</>
 							)}
 
@@ -92,7 +79,7 @@ export default function Login(): JSX.Element {
 								</div>
 								<div className={styles["social-buttons"]}>
 									<button type="button" className={styles["social-button-google"]}>
-										<FaGoogle />
+										<FcGoogle />
 									</button>
 									<button type="button" className={styles["social-button-facebook"]}>
 										<FaFacebookF />
